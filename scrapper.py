@@ -30,12 +30,12 @@ for row in tableRow:
     if temp is None:
         print("none recieved",row)
     else:
-        print("temp---->",temp.text.encode('utf-8'),type(temp.text.encode('utf-8')))
+        # print("temp---->",temp.text.encode('utf-8'),temp.text.encode('utf-32'),type(temp.text.encode('utf-8')))
         text=temp.text.encode('utf-8')
-        # print("text-->",text,text.split())
+        # print("text-->",text)
         if text != "N/A":
             text=text[0:2]
-            print("text-->2",text)
+            # print("text-->2",text)
         a={
             "city": city.text.encode("utf-8"),
             "Temperature": text
